@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "msvc build",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                // "/O2",
+                "/std:c++latest",
+                "/EHsc",
+                "/Zi",
+                "/W4",
+                "/nologo",
+                "/D_LOCAL=1",
+                "/Fe:",
+                "coursera.exe",
+                "main.cpp",
+                "tests.cpp",
+                "solution.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

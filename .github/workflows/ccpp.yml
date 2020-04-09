@@ -1,0 +1,23 @@
+name: Coursera CMake Build & Test
+
+on: [push]
+
+jobs:
+  build:
+    name: Build for ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use CMake for build
+      uses: ashutoshvarma/action-cmake-build@v1
+      with:
+        build-dir: ${{ runner.workspace }}/build
+        configure-options: -DCOURSERA_TEST=ON
+        cxx: g++
+        build-type: Release
+    - name: Run tests
+      run: |
+        ${{ runner.workspace }}/build/transport
