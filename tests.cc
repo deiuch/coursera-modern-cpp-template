@@ -5,7 +5,6 @@
 
 using namespace std;
 
-void TestAll() noexcept
-{
-    TestRunner tr;
+void TestAll() noexcept {
+  TestRunner tr;
 }

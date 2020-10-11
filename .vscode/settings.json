@@ -8,6 +8,7 @@
         "**/*.obj": true,
         "**/*.pdb": true,
         "**/*.ilk": true,
+        "**/*.idb": true,
         "**/*.exe": true,
         "**/*.zip": true
     }

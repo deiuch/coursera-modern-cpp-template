@@ -1,6 +1,6 @@
-#ifndef _COURSERA_MODERN_CPP_TESTS_H
-#define _COURSERA_MODERN_CPP_TESTS_H
+#ifndef COURSERA_MODERN_CPP_TESTS_H_
+#define COURSERA_MODERN_CPP_TESTS_H_
 
 void TestAll() noexcept;
 
-#endif
+#endif  // COURSERA_MODERN_CPP_TESTS_H_

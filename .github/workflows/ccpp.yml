@@ -20,4 +20,4 @@ jobs:
         build-type: Release
     - name: Run tests
       run: |
-        ${{ runner.workspace }}/build/transport
+        ${{ runner.workspace }}/build/solution

@@ -1,6 +1,7 @@
 **/*.obj
 **/*.pdb
 **/*.ilk
+**/*.idb
 **/*.exe
 **/*.zip
 .vscode/c_cpp_properties.json

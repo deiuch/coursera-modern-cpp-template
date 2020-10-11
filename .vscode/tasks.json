@@ -13,11 +13,12 @@
                 "/W4",
                 "/nologo",
                 "/D_LOCAL=1",
+                // "/D_TESTS",
                 "/Fe:",
                 "coursera.exe",
-                "main.cpp",
-                "tests.cpp",
-                "solution.cpp"
+                "tests.cc",
+                "solution.cc",
+                "main.cc"
             ],
             "group": {
                 "kind": "build",
